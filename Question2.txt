@@ -1,0 +1,39 @@
+Q 2. Explain with examples the remaining methods of String and Array
+Ans. String methods help you to work with strings i.e the sequence of characters
+Below are the some string methods:
+	Length: The length property returns the length of a string
+		Example:
+			var txt = "sahil";
+			var sln = txt.length;	// It would be 5  
+	indexOf(): returns the index of (the position of) the first occurrence of a specified text in a string
+		Example:
+			var str = "Please work property";
+			var pos = str.indexOf("work");  // It would return 7
+	Search(): method searches a string for a specified value and returns the position of the match
+		Example: 
+			var str = "Please work property";
+			var pos = str.search("work");  // It would return 7
+	slice() and substring(): extracts a part of a string and returns the extracted part in a new string.
+		Example:
+			var str = "Apple, Banana, Kiwi";
+			var res = str.slice(7, 13); // Output would be 'Banana'
+	replace(): method replaces a specified value with another value in a string
+		Example:
+			str = "Please visit Google!";
+			var n = str.replace("Goodle", "Tech Mahindra");  // it will change the str to "Please visit Tech Mahindra"
+	toUpperCase(): It will change the string to Uppercase
+		Example:
+			var text1 = "Hello World!";       // String
+			var text2 = text1.toUpperCase();  // text2 is text1 converted to upper
+	toLowerCase(): It will change the string to Lowecase
+		Example:
+			var text1 = "Hello World!";       // String
+			var text2 = text1.toLowerCase();  // text2 is text1 converted to lower case
+	concat(): method can be used instead of the plus operator. These two lines do the same
+		Example:
+			var text = "Hello" + " " + "World!"; // We can also used '+' instead of concat()
+			var text = "Hello".concat(" ", "World!"); // New string would be Hello World
+	trim(): method removes whitespace from both sides of a string
+		Example:
+			var str = "       Hello World!        ";
+			alert(str.trim()); //It will print "Hello World"
